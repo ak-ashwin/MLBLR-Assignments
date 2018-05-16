@@ -1,0 +1,46 @@
+Image Augmentation:
+We need a lot of images for training and predicting image classification problems. Sometime we have access to a huge set of data and sometime we don’t. What we would like to train on our different variations of the image. So, that based on any variation it can recognise or auto-fill the are with that colour or shape.
+
+There are different techniques for image augmentation:
+1. Resizing: Image resizing is the most important technique to apply before starting as the size of thee image you've trained on matterrs a lot. Previously, I had used a python library which can detect the cheque number from an image of a cheque. The interesting fact was that it was not working on a particular image and I had faced a similar isssue before and I realised that if you resize the image to the size of the training image that they had provided then it'll work. I tried that and it started working for all images. IMAGE RESISING is the most import technique before starting anyhting.
+
+2. Scaling: It depends on what scale the image was trained on. For eg: Photos which are zoomed and then trained might need padding around it. But the scale at which it was trained will be greater than the original size of the image.
+
+3. Translation: If you want the object to be detected at any place an image  then you need train it for translationn so that it can recognize the image if it is at the botttom, side or on top.
+
+4. Rotation: Similar to translation we need to detect any object if it is inverted or if someone has taken a snapshot in a landscape mode. Basically, we are covering this for all any image which has a slight movement form the baseline or even 90,180 degrees shift in an image.
+
+5. Flipping: Similar to rotation we need to check for flipped left or flipped right or transpose of an image. 
+
+6. Brightness: Based on the lighting conditons and shaded area the image training can be improved.
+
+
+
+
+
+
+Convolution:
+
+CNN is a neural network which consists of neurons which has weights and biases. It takes an input and alters the weights and biases and does a dot product on the input layer and forwards it to the next layer to do the next operation. After the weights are added it is called as an Activation layer.
+
+a. Usual Convolutions (stick to 3x3):
+	3x3 kernels are basically filters used to detect edges, blur, increase sharpness etc.
+
+	Eg: A=⎡⎣⎢⎢111111111⎤⎦⎥⎥
+
+
+b. 1x1 Convolution
+
+
+
+c. Cx1, 1XC Convolutions
+
+
+
+d. Grouped Convolutions
+
+
+e. Depthwise Separable convolutions
+
+
+f. MaxPooling
